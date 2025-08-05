@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.4vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.1;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      top: 250%;
+      bottom: auto;
+      transform: translateY(0.4em);
+    }
+    .c1 {top: 25.5%;right: 15%;/* font-size: 4.3vw; */width: 63%;}
+    .c2 {top: 46.5%;right: 11%;width: 26%;}
+    .c3 {top: 50%;right: 57%;width: 31%;}
+    .c4 {top: 62.5%;right: 39%;width: 27%;}
+    .c5 {top: 71%;right: 40%;width: 20%;}
+    .c6 {top: 81%;right: 39%;width: 29%;}
+    .c7 {top: 68%;right: 5%;width: 43%;}
+    .c8 {top: 90.5%;right: 11%;width: 29%;}
+    .c9 {top: 68%;right: 54%;width: 33%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/8.png" alt="Page 8 Comic">
+
+<div class="text-layer">
+  <div class="caption c1">
+    <span class="word">بِهَديك<span class="tooltip">That</span></span>
+    <span class="word">اللّيلِة،<span class="tooltip">night,</span></span>
+    <span class="word">غاتسبي<span class="tooltip">Gatsby</span></span>
+    <span class="word">طَلَب<span class="tooltip">asked</span></span>
+    <span class="word">مِن<span class="tooltip">from</span></span>
+    <span class="word">جوردان<span class="tooltip">Jordan</span></span>
+    <span class="word">طَلَب<span class="tooltip">a request</span></span>
+    <span class="word">غَريب…<span class="tooltip">strange…</span></span>
+  </div>
+
+  <div class="caption c2">
+    <span class="word">غاتسبي<span class="tooltip">Gatsby</span></span>
+    <span class="word">كان<span class="tooltip">was</span></span>
+    <span class="word">بِحِب<span class="tooltip">in love with</span></span>
+    <span class="word">دايزي<span class="tooltip">Daisy</span></span>
+    <span class="word">مِن<span class="tooltip">since</span></span>
+    <span class="word">خَمس<span class="tooltip">five</span></span>
+    <span class="word">سْنين.<span class="tooltip">years ago.</span></span>
+    <span class="word">قَبِل ما<span class="tooltip">Before</span></span>
+    <span class="word">تِتزَوَّج.<span class="tooltip">she got married.</span></span>
+  </div>
+
+  <div class="caption c3">
+    <span class="word">هُنيك،<span class="tooltip">There,</span></span>
+    <span class="word">لِوِيلڤِل،<span class="tooltip">in Louisville,</span></span>
+    <span class="word">سَنِة<span class="tooltip">in the year</span></span>
+    <span class="word">١٩١٧.<span class="tooltip">1917.</span></span>
+    <span class="word">كانو<span class="tooltip">They were</span></span>
+    <span class="word">مَغْرُومين.<span class="tooltip">in love.</span></span>
+  </div>
+
+  <div class="caption c4">
+    <span class="word">هوّ<span class="tooltip">He</span></span>
+    <span class="word">بَنا<span class="tooltip">built</span></span>
+    <span class="word">كِلّ<span class="tooltip">all</span></span>
+    <span class="word">هَالْقَصر<span class="tooltip">this mansion</span></span>
+    <span class="word">وَعَمِل<span class="tooltip">and threw</span></span>
+    <span class="word">الحَفلات<span class="tooltip">the parties</span></span>
+    <span class="word">بَس<span class="tooltip">just</span></span>
+    <span class="word">مَشانها.<span class="tooltip">for her.</span></span>
+  </div>
+
+  <div class="caption c5">
+    <span class="word">كِلّ<span class="tooltip">All</span></span>
+    <span class="word">هاد...<span class="tooltip">this...</span></span>
+    <span class="word">مِشان<span class="tooltip">for</span></span>
+    <span class="word">قَريبتي<span class="tooltip">my cousin</span></span>
+    <span class="word">دايزي؟<span class="tooltip">Daisy?</span></span>
+  </div>
+
+  <div class="caption c6">
+    <span class="word">هوّ<span class="tooltip">He</span></span>
+    <span class="word">بِدّه<span class="tooltip">wants</span></span>
+    <span class="word">تِتْرَتّب<span class="tooltip">to arrange</span></span>
+    <span class="word">قَعدة<span class="tooltip">a meeting</span></span>
+    <span class="word">بَيْناتُن...<span class="tooltip">between them…</span></span>
+    <span class="word">وَإِنت<span class="tooltip">and you</span></span>
+    <span class="word">اللِّي<span class="tooltip">who</span></span>
+    <span class="word">لازِم<span class="tooltip">must</span></span>
+    <span class="word">تِعْزِمها.<span class="tooltip">invite her.</span></span>
+  </div>
+</div>
+
+
+
+  </div>
+</body>
+</html>

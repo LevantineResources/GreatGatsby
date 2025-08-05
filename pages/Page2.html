@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.3vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.1;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      top: 250%;
+      bottom: auto;
+      transform: translateY(0.4em);
+    }
+    .c1 {top: 2%;right: 2%;/* font-size: 4.3vw; */width: 44%;}
+    .c2 {top: 25%;right: 1%;width: 25%;}
+    .c3 {top: 25%;right: 51%;width: 43%;}
+    .c4 {top: 58%;right: 2%;width: 43%;}
+    .c5 {top: 52%;right: 72%;width: 19%;}
+    .c6 {top: 90%;right: 2%;width: 43%;}
+    .c7 {top: 73%;right: 52%;width: 16%;}
+    .c8 {top: 90%;right: 53%;width: 41%;}
+    .c9 {top: 68%;right: 54%;width: 33%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/2.png" alt="Page 2 Comic">
+
+<div class="text-layer">
+  <div class="caption c1">
+    <span class="word">أَنا<span class="tooltip">I</span></span>
+    <span class="word">نِك<span class="tooltip">Nick</span></span>
+    <span class="word">كَراواي،<span class="tooltip">Carraway,</span></span>
+    <span class="word">إِجيت<span class="tooltip">I came</span></span>
+    <span class="word">عَ<span class="tooltip">to</span></span>
+    <span class="word">نيو<span class="tooltip">New</span></span>
+    <span class="word">يورك<span class="tooltip">York</span></span>
+    <span class="word">بِصيف<span class="tooltip">in the summer of</span></span>
+    <span class="word">١٩٢٢<span class="tooltip">1922</span></span>
+    <span class="word">لَتْعَلَّم<span class="tooltip">to learn</span></span>
+    <span class="word">عَن<span class="tooltip">about</span></span>
+    <span class="word">شُغِل<span class="tooltip">the business</span></span>
+    <span class="word">السَّنَدات.<span class="tooltip">of bonds.</span></span>
+  </div>
+
+  <div class="caption c2">
+    <span class="word">أنا<span class="tooltip">I</span></span>
+    <span class="word">ساكن<span class="tooltip">am staying</span></span>
+    <span class="word">بِحارة<span class="tooltip">in a neighborhood</span></span>
+    <span class="word">غَنِيّة<span class="tooltip">rich</span></span>
+    <span class="word">بَرّات<span class="tooltip">outside</span></span>
+    <span class="word">المدينة.<span class="tooltip">the city.</span></span>
+  </div>
+
+  <div class="caption c3">
+    <span class="word">أَجَّرت<span class="tooltip">I rented</span></span>
+    <span class="word">بَيت<span class="tooltip">a house</span></span>
+    <span class="word">زْغِير<span class="tooltip">small</span></span>
+    <span class="word">بِمنطِئَة<span class="tooltip">in an area</span></span>
+    <span class="word">إِسما<span class="tooltip">called</span></span>
+    <span class="word">"وِست<span class="tooltip">West</span></span>
+    <span class="word">إِغ"،<span class="tooltip">Egg,”</span></span>
+    <span class="word">قُدّام<span class="tooltip">in front of</span></span>
+    <span class="word">بَيت<span class="tooltip">a house</span></span>
+    <span class="word">كَبير<span class="tooltip">big</span></span>
+    <span class="word">وَغَريب.<span class="tooltip">and strange.</span></span>
+  </div>
+
+  <div class="caption c4">
+    <span class="word">كُلّ<span class="tooltip">Every</span></span>
+    <span class="word">سَبِت<span class="tooltip">Saturday</span></span>
+    <span class="word">بِالعَيل،<span class="tooltip">evening,</span></span>
+    <span class="word">الحَفلات<span class="tooltip">the parties</span></span>
+    <span class="word">ما<span class="tooltip">don’t</span></span>
+    <span class="word">بِتوقَف.<span class="tooltip">stop.</span></span>
+  </div>
+
+  <div class="caption c5">
+    <span class="word">الجارِ<span class="tooltip">The neighbor</span></span>
+    <span class="word">اسْمُه<span class="tooltip">his name is</span></span>
+    <span class="word">جاي<span class="tooltip">Jay</span></span>
+    <span class="word">غاتسبي.<span class="tooltip">Gatsby.</span></span>
+  </div>
+
+  <div class="caption c6">
+    <span class="word">أَنا<span class="tooltip">I</span></span>
+    <span class="word">خِريج<span class="tooltip">am a graduate of</span></span>
+    <span class="word">يِيل،<span class="tooltip">Yale,</span></span>
+    <span class="word">وَبَعرِف<span class="tooltip">and I know</span></span>
+    <span class="word">ناس<span class="tooltip">people</span></span>
+    <span class="word">مِن<span class="tooltip">from</span></span>
+    <span class="word">"إيست<span class="tooltip">East</span></span>
+    <span class="word">إِغ"<span class="tooltip">Egg"</span></span>
+    <span class="word">–<span class="tooltip">–</span></span>
+    <span class="word">الطَّبَقِة<span class="tooltip">the class</span></span>
+    <span class="word">العُليا<span class="tooltip">upper</span></span>
+    <span class="word">وَالعَائِلات<span class="tooltip">and families</span></span>
+    <span class="word">القَديمِة.<span class="tooltip">of old.</span></span>
+  </div>
+
+  <div class="caption c7">
+    <span class="word">أَهلِين<span class="tooltip">Hello</span></span>
+    <span class="word">نِك!<span class="tooltip">Nick!</span></span>
+    <span class="word">سِمِعت<span class="tooltip">I heard</span></span>
+    <span class="word">إنَّك<span class="tooltip">that you</span></span>
+    <span class="word">جِيت<span class="tooltip">came</span></span>
+    <span class="word">عَ<span class="tooltip">to</span></span>
+    <span class="word">نيو يورك.<span class="tooltip">New York.</span></span>
+  </div>
+
+  <div class="caption c8">
+    <span class="word">رُحت<span class="tooltip">I went</span></span>
+    <span class="word">لَزور<span class="tooltip">to visit</span></span>
+    <span class="word">قَريبتي<span class="tooltip">my cousin</span></span>
+    <span class="word">دايزي<span class="tooltip">Daisy</span></span>
+    <span class="word">وَجوزها<span class="tooltip">and her husband</span></span>
+    <span class="word">توم<span class="tooltip">Tom</span></span>
+    <span class="word">بُوكانن<span class="tooltip">Buchanan</span></span>
+    <span class="word">بِـ"إيست<span class="tooltip">in East</span></span>
+    <span class="word">إِغ".<span class="tooltip">Egg."</span></span>
+  </div>
+</div>
+
+
+
+  </div>
+</body>
+</html>

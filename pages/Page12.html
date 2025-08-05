@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.1;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      top: 250%;
+      bottom: auto;
+      transform: translateY(0.4em);
+    }
+    .c1 {top: 3.5%;right: 5.4%;/* font-size: 4.3vw; */width: 39%;}
+    .c2 {top: 4.5%;right: 53%;width: 37%;}
+    .c3 {top: 57%;right: -2%;width: 52%;}
+    .c4 {top: 54%;right: 62%;width: 28%;}
+    .c5 {top: 88%;right: 10.5%;width: 34%;}
+    .c6 {top: 90%;right: 60%;width: 30%;}
+    .c7 {top: 68%;right: 5%;width: 43%;}
+    .c8 {top: 90.5%;right: 11%;width: 29%;}
+    .c9 {top: 68%;right: 54%;width: 33%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/12.png" alt="Page 12 Comic">
+
+<div class="text-layer">
+  <div class="caption c1">
+    <span class="word">دَعانا<span class="tooltip">He invited us</span></span>
+    <span class="word">عَ<span class="tooltip">to</span></span>
+    <span class="word">قَصرُه...<span class="tooltip">his mansion…</span></span>
+    <span class="word">وَكِلّ<span class="tooltip">and every</span></span>
+    <span class="word">شُبَّاك<span class="tooltip">window</span></span>
+    <span class="word">فِي<span class="tooltip">had</span></span>
+    <span class="word">مَشهَد.<span class="tooltip">a view.</span></span>
+    <span class="word">كِلّ<span class="tooltip">Every</span></span>
+    <span class="word">غُرْفِة<span class="tooltip">room</span></span>
+    <span class="word">أَحْلَى<span class="tooltip">more beautiful</span></span>
+    <span class="word">مِن<span class="tooltip">than</span></span>
+    <span class="word">التَّانِيِة.<span class="tooltip">the next.</span></span>
+  </div>
+
+  <div class="caption c2">
+    <span class="word">كلّ شي<span class="tooltip">Everything</span></span>
+    <span class="word">أَصْلِي،<span class="tooltip">is original,</span></span>
+    <span class="word">يا<span class="tooltip">oh</span></span>
+    <span class="word">أَصِيل...<span class="tooltip">old sport…</span></span>
+    <span class="word">حَتّى وَلا<span class="tooltip">not even</span></span>
+    <span class="word">قَرِيب<span class="tooltip">close</span></span>
+    <span class="word">عَن<span class="tooltip">to</span></span>
+    <span class="word">الزُّور.<span class="tooltip">fake.</span></span>
+  </div>
+
+  <div class="caption c3">
+    <span class="word">غَرفِة<span class="tooltip">A room</span></span>
+    <span class="word">كِلّا<span class="tooltip">full of</span></span>
+    <span class="word">قُمصان،<span class="tooltip">shirts,</span></span>
+    <span class="word">كِلّ<span class="tooltip">every</span></span>
+    <span class="word">لَون<span class="tooltip">color</span></span>
+    <span class="word">وَكِلّ<span class="tooltip">and every</span></span>
+    <span class="word">قَماش.<span class="tooltip">fabric.</span></span>
+  </div>
+
+  <div class="caption c4">
+    <span class="word">هَيّ...<span class="tooltip">These…</span></span>
+    <span class="word">هالقُمصان...<span class="tooltip">shirts…</span></span>
+    <span class="word">كِلّ<span class="tooltip">all</span></span>
+    <span class="word">هاد<span class="tooltip">this</span></span>
+    <span class="word">كان فيه يكون<span class="tooltip">could have been</span></span>
+    <span class="word">إِلِي.<span class="tooltip">mine.</span></span>
+  </div>
+
+  <div class="caption c5">
+    <span class="word">بَعْدُه<span class="tooltip">There’s still</span></span>
+    <span class="word">وَقْت،<span class="tooltip">time,</span></span>
+    <span class="word">دايزي...<span class="tooltip">Daisy…</span></span>
+    <span class="word">كلّ شي<span class="tooltip">everything</span></span>
+    <span class="word">بِنْرُجَع<span class="tooltip">we can rebuild</span></span>
+    <span class="word">نِبْنِيه<span class="tooltip">build it</span></span>
+    <span class="word">مِن<span class="tooltip">from</span></span>
+    <span class="word">جْدِيد.<span class="tooltip">scratch.</span></span>
+  </div>
+
+  <div class="caption c6">
+    <span class="word">كان<span class="tooltip">He was</span></span>
+    <span class="word">مَبْسُوط<span class="tooltip">so happy</span></span>
+    <span class="word">لَغايِة<span class="tooltip">to the point</span></span>
+    <span class="word">إِنُّه<span class="tooltip">that</span></span>
+    <span class="word">ما عاد<span class="tooltip">he no longer</span></span>
+    <span class="word">يِشُوف<span class="tooltip">see</span></span>
+    <span class="word">وَاقِع،<span class="tooltip">reality,</span></span>
+    <span class="word">بَسّ<span class="tooltip">only</span></span>
+    <span class="word">حِلِم.<span class="tooltip">dream.</span></span>
+  </div>
+</div>
+
+
+  </div>
+</body>
+</html>

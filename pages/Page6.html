@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.3vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.1;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      top: 250%;
+      bottom: auto;
+      transform: translateY(0.4em);
+    }
+    .c1 {top: 24%;right: 4%;/* font-size: 4.3vw; */width: 39%;}
+    .c2 {top: 6.5%;right: 50%;width: 20%;}
+    .c3 {top: 52.5%;right: 5%;width: 39%;}
+    .c4 {top: 53.5%;right: 68%;width: 23%;}
+    .c5 {top: 66%;right: -3%;width: 52%;}
+    .c6 {top: 65.5%;right: 53%;width: 24%;}
+    .c7 {top: 80%;right: 51%;width: 15%;}
+    .c8 {top: 90%;right: 52%;width: 40%;}
+    .c9 {top: 26%;right: 4%;width: 42%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/6.png" alt="Page 6 Comic">
+<div class="text-layer">
+  <div class="caption c1">
+    <span class="word">كِلّ<span class="tooltip">Every</span></span>
+    <span class="word">سَبِت،<span class="tooltip">Saturday,</span></span>
+    <span class="word">كان<span class="tooltip">was</span></span>
+    <span class="word">بَيْت<span class="tooltip">house</span></span>
+    <span class="word">غاتسبي<span class="tooltip">Gatsby's</span></span>
+  </div>
+  <div class="caption c9">
+    <span class="word">يِضْوَى<span class="tooltip">lit up</span></span>
+    <span class="word">وَ<span class="tooltip">and</span></span>
+    <span class="word">يِضَجّ<span class="tooltip">buzzed</span></span>
+    <span class="word">بِالنَّاس<span class="tooltip">with people</span></span>
+    <span class="word">وَ<span class="tooltip">and</span></span>
+    <span class="word">المُوسِيقَى.<span class="tooltip">music.</span></span>
+  </div>
+
+  <div class="caption c2">
+    <span class="word">هَالمَرَّة،<span class="tooltip">This time,</span></span>
+    <span class="word">وَصَلني<span class="tooltip">I received</span></span>
+    <span class="word">دَعْوَة<span class="tooltip">an invitation</span></span>
+    <span class="word">خَصِّيصِي<span class="tooltip">especially</span></span>
+    <span class="word">مِن<span class="tooltip">from</span></span>
+    <span class="word">غاتسبي<span class="tooltip">Gatsby</span></span>
+    <span class="word">نَفْسُه.<span class="tooltip">himself.</span></span>
+  </div>
+
+  <div class="caption c3">
+    <span class="word">الحَديقَة<span class="tooltip">The garden</span></span>
+    <span class="word">مِتل<span class="tooltip">was like</span></span>
+    <span class="word">الحِلِم،<span class="tooltip">a dream,</span></span>
+    <span class="word">أَضْوَاء،<span class="tooltip">lights,</span></span>
+    <span class="word">وَرَقْص،<span class="tooltip">dancing,</span></span>
+    <span class="word">وَوَجْه<span class="tooltip">and a face</span></span>
+    <span class="word">غَرِيبِة<span class="tooltip">strange</span></span>
+    <span class="word">كِل<span class="tooltip">every</span></span>
+    <span class="word">مَكان.<span class="tooltip">place.</span></span>
+  </div>
+
+  <div class="caption c4">
+    <span class="word">نِك!<span class="tooltip">Nick!</span></span>
+    <span class="word">أَخِيراً<span class="tooltip">Finally</span></span>
+    <span class="word">جِيت<span class="tooltip">you came</span></span>
+    <span class="word">عَ<span class="tooltip">to</span></span>
+    <span class="word">حفلة غاتسبي!<span class="tooltip">Gatsby's party!</span></span>
+  </div>
+
+  <div class="caption c5">
+    <span class="word">مع هيك،<span class="tooltip">Still,</span></span>
+    <span class="word">الكِل<span class="tooltip">everyone</span></span>
+    <span class="word">كان<span class="tooltip">was</span></span>
+    <span class="word">يحكي<span class="tooltip">talking</span></span>
+    <span class="word">عن<span class="tooltip">about</span></span>
+    <span class="word">غاتسبي.<span class="tooltip">Gatsby.</span></span>
+  </div>
+
+  <div class="caption c6">
+    <span class="word">لا!<span class="tooltip">No!</span></span>
+    <span class="word">بِيِشتِغِل<span class="tooltip">He works</span></span>
+    <span class="word">لِلْمُخابَرات!<span class="tooltip">for the intelligence service!</span></span>
+  </div>
+
+  <div class="caption c7">
+    <span class="word">بيقولوا<span class="tooltip">They say</span></span>
+    <span class="word">إنُّه<span class="tooltip">that he</span></span>
+    <span class="word">قَتَل<span class="tooltip">killed</span></span>
+    <span class="word">واحِد!<span class="tooltip">someone!</span></span>
+  </div>
+
+  <div class="caption c8">
+    <span class="word">ما حَدا<span class="tooltip">No one</span></span>
+    <span class="word">عَرفان<span class="tooltip">knew</span></span>
+    <span class="word">كيف<span class="tooltip">how</span></span>
+    <span class="word">شَكلُه...<span class="tooltip">he looked</span></span>
+    <span class="word">وَما حَدا<span class="tooltip">and no one</span></span>
+    <span class="word">تَأَكَّد<span class="tooltip"> was sure</span></span>
+    <span class="word">إِذا<span class="tooltip">if</span></span>
+    <span class="word">شافُه<span class="tooltip">seen him</span></span>
+    <span class="word">قَبِل.<span class="tooltip">before.</span></span>
+  </div>
+</div>
+
+  </div>
+</body>
+</html>

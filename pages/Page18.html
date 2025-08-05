@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.3vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.1;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      top: 250%;
+      bottom: auto;
+      transform: translateY(0.4em);
+    }
+    .c1 {top: 5%;right: 5%;/* font-size: 4.3vw; */width: 39%;}
+    .c2 {top: 25.5%;right: 51%;width: 42%;}
+    .c3 {top: 58%;right: 2%;width: 43%;}
+    .c4 {top: 50%;right: 49%;width: 25%;}
+    .c5 {top: 56%;right: 51%;width: 41%;}
+    .c6 {top: 89%;right: 49%;width: 36%;}
+    .c7 {top: 68%;right: 5%;width: 43%;}
+    .c8 {top: 90.5%;right: 11%;width: 29%;}
+    .c9 {top: 68%;right: 54%;width: 33%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/18.png" alt="Page 18 Comic">
+<div class="text-layer">
+  <div class="caption c1">
+    <span class="word">ميرتِل،<span class="tooltip">Myrtle,</span></span>
+    <span class="word">مَضْرُوبِة،<span class="tooltip">hit,</span></span>
+    <span class="word">مِيتِة...<span class="tooltip">dead…</span></span>
+    <span class="word">وَجُورج<span class="tooltip">and George</span></span>
+    <span class="word">نَازِل<span class="tooltip">lying</span></span>
+    <span class="word">عَالأَرْض<span class="tooltip">on the ground</span></span>
+    <span class="word">جُوّا<span class="tooltip">inside</span></span>
+    <span class="word">الكَرَاج،<span class="tooltip">the garage,</span></span>
+    <span class="word">مَكسُور.<span class="tooltip">broken.</span></span>
+  </div>
+
+  <div class="caption c2">
+    <span class="word">توم<span class="tooltip">Tom</span></span>
+    <span class="word">ما<span class="tooltip">didn’t</span></span>
+    <span class="word">حَكى<span class="tooltip">say</span></span>
+    <span class="word">وَلا<span class="tooltip">a single</span></span>
+    <span class="word">كِلْمِة<span class="tooltip">word</span></span>
+    <span class="word">بالأَوَّل…<span class="tooltip">at first…</span></span>
+    <span class="word">بَس<span class="tooltip">but</span></span>
+    <span class="word">طِلِع<span class="tooltip">he looked</span></span>
+    <span class="word">بِجورج<span class="tooltip">at George</span></span>
+    <span class="word">وَقَال<span class="tooltip">and said</span></span>
+    <span class="word">كِلْماتُه<span class="tooltip">his words</span></span>
+    <span class="word">بْبُرود<span class="tooltip">coldly</span></span>
+    <span class="word">وَبِتْأنّي<span class="tooltip">and deliberately</span></span>
+  </div>
+
+  <div class="caption c3">
+    <span class="word">كان<span class="tooltip">It was</span></span>
+    <span class="word">غاتسبي...<span class="tooltip">Gatsby…</span></span>
+    <span class="word">سَيّارتُه<span class="tooltip">his car</span></span>
+    <span class="word">الصَّفرَا.<span class="tooltip">the yellow one.</span></span>
+  </div>
+
+  <div class="caption c4">
+    <span class="word">هِيّ<span class="tooltip">She</span></span>
+    <span class="word">كانت<span class="tooltip">was</span></span>
+    <span class="word">تْسُوق...<span class="tooltip">driving…</span></span>
+    <span class="word">بَس<span class="tooltip">but</span></span>
+    <span class="word">أَنا<span class="tooltip">I</span></span>
+    <span class="word">بْتْحَمَّل<span class="tooltip">take</span></span>
+    <span class="word">المَسؤُولِيِّة.<span class="tooltip">responsibility.</span></span>
+  </div>
+
+  <div class="caption c5">
+    <span class="word">رَجَعِت<span class="tooltip">I returned</span></span>
+    <span class="word">ع<span class="tooltip">to</span></span>
+    <span class="word">بيت<span class="tooltip">the house</span></span>
+    <span class="word">غاتسبي،<span class="tooltip">of Gatsby,</span></span>
+    <span class="word">وِلْقِيتُه<span class="tooltip">and found him</span></span>
+    <span class="word">واقِف<span class="tooltip">standing</span></span>
+    <span class="word">وَحْدُه،<span class="tooltip">alone,</span></span>
+    <span class="word">كِإنُّه<span class="tooltip">as if he</span></span>
+    <span class="word">لِسّاتُه<span class="tooltip">was still</span></span>
+    <span class="word">نَاطِر<span class="tooltip">waiting</span></span>
+    <span class="word">جَواب.<span class="tooltip">for an answer.</span></span>
+  </div>
+
+  <div class="caption c6">
+    <span class="word">بَعْد<span class="tooltip">After</span></span>
+    <span class="word">كِلّ شي<span class="tooltip">everything,</span></span>
+    <span class="word">لَسّاتُه<span class="tooltip">still</span></span>
+    <span class="word">عم يِسْتَنَّى...<span class="tooltip">he was waiting…</span></span>
+    <span class="word">نُور،<span class="tooltip">for light,</span></span>
+    <span class="word">وَوَعْد،<span class="tooltip">a promise,</span></span>
+    <span class="word">وَحِلِم.<span class="tooltip">and a dream.</span></span>
+  </div>
+</div>
+
+  </div>
+</body>
+</html>
