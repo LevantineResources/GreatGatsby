@@ -1,4 +1,4 @@
-# غاتسبي الأكبر | The Great Gatsby - Comic Adaptation in Levantine Arabic
+# الغاتسبي الأكبر | The Great Gatsby - Comic Adaptation in Levantine Arabic
 
 This project is a comic adaptation of **F. Scott Fitzgerald's The Great Gatsby** retold in **Levantine (Syrian) Arabic**, with a focus on **accessible language for Arabic learners**. Every line of text includes English glosses via **interactive tooltips** for immersive, comprehensible input.
 
